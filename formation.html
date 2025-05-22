@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Étapes CI/CD pour Déploiement sur Azure</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f8f9fa; }
+        h1 { color: #0078d4; }
+        .step {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            margin-bottom: 30px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .step img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-right: 24px;
+        }
+        .step-number {
+            font-size: 1.5em;
+            color: #005a9e;
+            margin-right: 16px;
+            font-weight: bold;
+        }
+        .step-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Étapes pour créer CI/CD et déployer sur Azure</h1>
+
+    <div class="step">
+        <span class="step-number">1</span>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <div class="step-content">
+            <strong>Créer un dépôt GitHub</strong>
+            <p>Initialisez votre projet et poussez votre code source sur un nouveau dépôt GitHub.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <span class="step-number">2</span>
+        <img src="https://learn.microsoft.com/en-us/azure/devops/pipelines/media/overview/what-is-azure-pipelines/azure-pipelines-logo.png" alt="Azure Pipelines">
+        <div class="step-content">
+            <strong>Configurer Azure Pipelines (CI)</strong>
+            <p>Créez un pipeline CI dans Azure DevOps pour automatiser la construction et les tests de votre application à chaque push.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <span class="step-number">3</span>
+        <img src="https://learn.microsoft.com/en-us/azure/app-service/media/app-service-overview/app-service-icon-80.png" alt="Azure App Service">
+        <div class="step-content">
+            <strong>Configurer le pipeline CD</strong>
+            <p>Ajoutez une étape de déploiement dans votre pipeline pour publier automatiquement votre application sur Azure (ex: Azure App Service).</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <span class="step-number">4</span>
+        <img src="https://learn.microsoft.com/en-us/azure/devops/pipelines/media/overview/what-is-azure-pipelines/continuous-deployment.png" alt="Déploiement Continu">
+        <div class="step-content">
+            <strong>Déploiement automatique</strong>
+            <p>À chaque modification validée, le pipeline déploie automatiquement la dernière version sur Azure.</p>
+        </div>
+    </div>
+
+</body>
+</html>
